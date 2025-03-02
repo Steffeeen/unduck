@@ -83,11 +83,7 @@ function getBangredirectUrl() {
 function feelingLuckyRedirect(query:string) {
   const cleanQuery = query.replace("!", "").trim();
   
-  if(defaultBang?.t === "g") return `https://www.google.com/search?btnI=1&q=${encodeURIComponent(cleanQuery)}`;
-  
-  if(defaultBang?.t === "ddg") return `https://duckduckgo.com/?q=!ducky+${encodeURIComponent(cleanQuery)}`
-
-  return `https://www.google.com/search?btnI=1&q=${encodeURIComponent(cleanQuery)}`
+  return `https://duckduckgo.com/?q=!ducky+${encodeURIComponent(cleanQuery)}`;
 }
 
 function doRedirect() {
