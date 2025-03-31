@@ -7,7 +7,4 @@ export default defineConfig({
       registerType: "autoUpdate",
     }),
   ],
-  server: {
-    host: "0.0.0.0"
-  }
 });
