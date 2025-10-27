@@ -20,6 +20,15 @@ export const bangs = [
     u: "https://www.perplexity.ai/?q={{{s}}}",
   },
   {
+    c: "AI",
+    d: "chatgpt.com",
+    r: 0,
+    s: "ChatGPT",
+    sc: "AI",
+    t: "cgpt",
+    u: "https://chatgpt.com/?q={{{s}}}",
+  },
+  {
     c: "Tech",
     d: "www.01net.com",
     r: 4,
