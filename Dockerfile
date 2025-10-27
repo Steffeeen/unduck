@@ -1,5 +1,5 @@
 # Use Node.js for building the app
-FROM node:18-alpine AS build
+FROM node:lts-alpine AS build
 
 # Set working directory
 WORKDIR /app
