@@ -111,7 +111,7 @@ function doRedirect() {
   
   const searchUrl = getBangredirectUrl();
   if (!searchUrl) return;
-  window.location.replace(searchUrl);
+  window.open(searchUrl, '_self');
 }
 
 doRedirect();
