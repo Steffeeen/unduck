@@ -2,6 +2,15 @@
 
 export const bangs = [
   {
+    c: "Tech",
+    d: "jdoc.steffeeen.de",
+    r: 0,
+    s: "JDoc",
+    sc: "Tech",
+    t: "jdoc",
+    u: "https://jdoc.steffeeen.de/?q={{{s}}}",
+  },
+  {
     c: "AI",
     d: "www.t3.chat",
     r: 0,
