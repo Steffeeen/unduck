@@ -1,0 +1,47 @@
+[
+  {
+    "t": "g",
+    "d": "www.google.com",
+    "u": "https://www.google.com/search?q={{{s}}}"
+  },
+  {
+    "t": "jdoc",
+    "d": "jdoc.steffeeen.de",
+    "u": "https://jdoc.steffeeen.de/?q={{{s}}}"
+  },
+  {
+    "t": "cgpt",
+    "d": "chatgpt.com",
+    "u": "https://chatgpt.com?q={{{s}}}"
+  },
+  {
+    "t": "wen",
+    "d": "en.wikipedia.org",
+    "u": "http://en.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
+  },
+  {
+    "t": "wde",
+    "d": "de.wikipedia.org",
+    "u": "https://de.wikipedia.org/w/index.php?search={{{s}}}"
+  },
+  {
+    "t": "imdb",
+    "d": "www.imdb.com",
+    "u": "http://www.imdb.com/find?s=all&q={{{s}}}"
+  },
+  {
+    "t": "gen",
+    "d": "genius.com",
+    "u": "http://genius.com/search?q={{{s}}}"
+  },
+  {
+    "t": "gh",
+    "d": "github.com",
+    "u": "https://github.com/search?utf8=%E2%9C%93&q={{{s}}}"
+  },
+  {
+    "t": "ddg",
+    "d": "duckduckgo.com",
+    "u": "https://duckduckgo.com/?q={{{s}}}"
+  }
+]

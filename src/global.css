@@ -150,6 +150,136 @@ textarea {
   color: #333;
 }
 
+#app {
+  min-height: 100%;
+}
+
+.home {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px 72px;
+}
+
+.content-container h1 {
+  margin-bottom: 12px;
+}
+
+.home-links {
+  margin-top: 24px;
+}
+
+.copy-status {
+  min-height: 24px;
+  font-size: 14px;
+  color: #666;
+}
+
+.bang-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.bang-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 56px;
+  font-size: 14px;
+}
+
+.bang-header a:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bang-intro {
+  max-width: 640px;
+  margin-top: 16px;
+  color: #666;
+}
+
+.refresh-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 24px 0 32px;
+  font-size: 14px;
+  color: #666;
+}
+
+.refresh-button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.bang-count {
+  margin: 16px 0 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.bang-list {
+  list-style: none;
+}
+
+.bang-list li {
+  display: grid;
+  grid-template-columns: minmax(80px, 140px) minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #ddd;
+  overflow-wrap: anywhere;
+}
+
+.bang-list code {
+  font-size: 15px;
+}
+
+.bang-domain,
+.bang-template {
+  display: block;
+}
+
+.bang-template {
+  color: #666;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.error-message {
+  color: #b42318;
+  margin: 16px 0;
+}
+
+@media (max-width: 540px) {
+  .bang-page {
+    padding: 24px 16px 48px;
+  }
+
+  .refresh-status {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bang-list li {
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: #ddd;
@@ -192,5 +322,22 @@ textarea {
 
   .copy-button:active {
     background: #333;
+  }
+
+  .bang-intro,
+  .bang-count,
+  .bang-template,
+  .refresh-status,
+  .copy-status {
+    color: #999;
+  }
+
+  .bang-list li,
+  .refresh-button {
+    border-color: #3d3d3d;
+  }
+
+  .error-message {
+    color: #ff9b91;
   }
 }
