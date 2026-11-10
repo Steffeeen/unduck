@@ -15,6 +15,11 @@
     "u": "https://chatgpt.com?q={{{s}}}"
   },
   {
+    "t": "cr",
+    "d": "chartrow.com",
+    "u": "https://chartrow.com/quote/{{{s}}}"
+  },
+  {
     "t": "wen",
     "d": "en.wikipedia.org",
     "u": "http://en.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
