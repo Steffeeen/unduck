@@ -29,8 +29,10 @@ test("redirects preserve query handling and fallback behavior", () => {
 });
 
 test("standalone ! uses DuckDuckGo without definitions", () => {
-  assert.equal(redirectUrl("hello !", []), "https://duckduckgo.com/?q=!ducky+hello");
-  assert.equal(redirectUrl("! hello world", []), "https://duckduckgo.com/?q=!ducky+hello%20world");
+  assert.equal(redirectUrl("hello !", []), "https://duckduckgo.com/?q=%5Chello");
+  assert.equal(redirectUrl("! hello world", []), "https://duckduckgo.com/?q=%5Chello%20world");
+  assert.equal(redirectUrl("ripgrep guide !", []), "https://duckduckgo.com/?q=%5Cripgrep%20guide");
+  assert.equal(redirectUrl("! ripgrep & guide", []), "https://duckduckgo.com/?q=%5Cripgrep%20%26%20guide");
 });
 
 test("upstream relative destinations resolve against DuckDuckGo", () => {

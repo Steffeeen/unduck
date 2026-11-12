@@ -94,7 +94,7 @@ export function redirectUrl(query: string, bangs: Bang[], defaultTrigger = "g"):
   query = query.trim();
   if (!query) return null;
   if (/!(?:\s|$)/.test(query)) {
-    return `https://duckduckgo.com/?q=!ducky+${encodeURIComponent(query.replace("!", "").trim())}`;
+    return `https://duckduckgo.com/?q=${encodeURIComponent("\\" + query.replace(/!(?:\s|$)/, "").trim())}`;
   }
   const trigger = query.match(/!(\S+)/)?.[1]?.toLowerCase();
   const selected = bangs.find((bang) => bang.t === trigger)
