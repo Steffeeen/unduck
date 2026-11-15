@@ -25,6 +25,11 @@
     "u": "https://www.tradingview.com/symbols/{{{s}}}/"
   },
   {
+    "t": "wa",
+    "d": "www.wolframalpha.com",
+    "u": "https://www.wolframalpha.com/input?i={{{s}}}"
+  },
+  {
     "t": "wen",
     "d": "en.wikipedia.org",
     "u": "http://en.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
